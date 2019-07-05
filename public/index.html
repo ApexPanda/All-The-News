@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Scraping With Mongoose</title>
     <style>
-      body { background-color: #F2F6D0 }
+      body { background-color: teal }
       #wrapper {
         width: 960px;
         margin-left: auto;
@@ -20,6 +20,9 @@
       #notes {
         float: right;
         width: 30%;
+      }
+      h1 {
+        text-align: center;
       }
       textarea, input {
         display: block;
@@ -38,9 +41,9 @@
   </head>
   <body>
     <div id="wrapper">
-      <h1>Note Scraper</h1>
-      <a href="/scrape" id="btn-scrape">1. Scrape</a>
-      <a href="/articles" id="btn-articles">2. Articles</a>
+      <h1>Scraped</h1>
+      <button href="/scrape" id="btn-scrape">Scrape</button>
+      <button href="/articles" id="btn-articles">Articles</button>
 
       <div id="articles"></div>
 

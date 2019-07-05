@@ -48,10 +48,10 @@ app.get("/scrape", function(req, res) {
 
       // Add the text and href of every link, and save them as properties of the result object
       result.title = $(this)
-        .children("a")
+        .children("button")
         .text();
       result.link = $(this)
-        .children("a")
+        .children("button")
         .attr("href");
 
       // Create a new Article using the `result` object built from scraping
